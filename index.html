@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-专题一" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/01/23/%E4%B8%93%E9%A2%98%E4%B8%80/" class="article-date">
+  <time class="dt-published" datetime="2025-01-23T11:41:09.000Z" itemprop="datePublished">2025-01-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2025/01/23/%E4%B8%93%E9%A2%98%E4%B8%80/">专题一</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Easy 难度:<br>1.AtCoder-abc336_a Long Loong<br>做题思路：<br>先打印L，在输出n个o，最后在输出ng<br>AC代码：<br>#include <iostream><br>#include <map><br>using namespace std;</p>
+<p>int main()<br>{<br>    int n;<br>    cin &gt;&gt; n;<br>    cout &lt;&lt; ‘L’;<br>    for (int i &#x3D; 1; i &lt;&#x3D; n; i++)<br>    {<br>        cout &lt;&lt; ‘o’;<br>    }<br>    cout &lt;&lt; “ng”;</p>
+<p>}<br>2.CodeForces-1703A YES or YES<br>做题思路：<br>先把字符串全部变为小写，再与”yes”进行比较<br>AC代码：<br>#include <iostream><br>#include <cstring><br>#include <cctype><br>using namespace std;</p>
+<p>int main()<br>{<br>    int n;<br>    scanf(“%d”, &amp;n);<br>    for (int i &#x3D; 0; i &lt; n; i++)<br>    {<br>        char a[4];<br>        scanf(“ %s”,&amp;a);<br>        for (int i &#x3D; 0; i &lt; 4; i++)<br>        {<br>            a[i] &#x3D; tolower(a[i]);</p>
+<pre><code>    &#125;
+    
+    if (!strcmp(&quot;yes&quot;, a)) cout &lt;&lt; &quot;YES&quot; &lt;&lt; endl;
+    else cout &lt;&lt; &quot;NO&quot; &lt;&lt; endl;
+&#125;
+</code></pre>
+<p>}<br>3.洛谷-P2955 Even? Odd? G<br>做题思路：先用字符串存储数字，判断最后一位数的奇偶性<br>AC代码：<br>#include <iostream><br>#include <cstring><br>using namespace std;</p>
+<p>int main()<br>{<br>    int n;<br>    cin &gt;&gt; n;<br>    for (int i &#x3D; 0; i &lt; n; i++)<br>    {<br>        char a[60];<br>        cin &gt;&gt; a;<br>        int len &#x3D; strlen(a);<br>        if ((a[len-1]-‘0’) % 2 &#x3D;&#x3D; 0) cout &lt;&lt; “even” &lt;&lt; endl;<br>        else cout &lt;&lt; “odd” &lt;&lt; endl;<br>    }</p>
+<p>}</p>
+<p>Medium 难度：<br>1.CodeForces-1980A<br>做题思路：<br>先统计每个难度的题数（不超过m个），在统计总共要出的题数，相减得出结果<br>AC代码：<br>#include <iostream><br>#include <map><br>using namespace std;</p>
+<p>int main()<br>{<br>    int t;<br>    cin &gt;&gt; t;<br>    for (int i &#x3D; 1; i &lt;&#x3D; t; i++)<br>    {<br>        int n, m;<br>        cin &gt;&gt; n &gt;&gt; m;&#x2F;&#x2F;n数量，m举办的轮数<br>        map&lt;char, int&gt;a;<br>        for (char j &#x3D; ‘A’; j &lt;&#x3D; ‘G’; j++)<br>        {<br>            a[j] &#x3D; 0;<br>        }<br>        string s;<br>        cin &gt;&gt; s;<br>        for (int j &#x3D; 0; j &lt; n; j++)<br>        {<br>            if (a[s[j]] &lt; m) a[s[j]]++;</p>
+<pre><code>    &#125;
+    int cnt = m*7;
+    for (char j = &#39;A&#39;; j &lt;= &#39;G&#39;; j++)
+    &#123;
+        cnt -= a[j];
+    &#125;
+    cout &lt;&lt; cnt &lt;&lt; endl;
+&#125;
+</code></pre>
+<p>}<br>2.洛谷-B4012<br>做题思路：<br>先计算每天遵守该规矩的人数，判断该天该规矩是否符合民意，在计算该规矩符合民意的天数，得出该规矩是正确还是错误的<br>AC代码：<br>#include <iostream><br>#include <cstring><br>#include <cctype><br>using namespace std;</p>
+<p>int main()<br>{<br>    int n,m,cnt&#x3D;0;&#x2F;&#x2F;n人数，m天数<br>    long long k;<br>    cin &gt;&gt; n &gt;&gt; m &gt;&gt; k;<br>    for (int i &#x3D; 1; i &lt;&#x3D; m; i++)<br>    {<br>        int mount&#x3D;0;<br>        for (int j &#x3D; 1; j &lt;&#x3D; n; j++)<br>        {<br>            long long ki;<br>            cin &gt;&gt; ki;<br>            if (ki &#x3D;&#x3D; k)mount++;<br>        }<br>        if (2 * mount &gt;&#x3D; n) cnt++;<br>    }<br>    if (2 * cnt &gt;&#x3D; m)cout &lt;&lt; “YES”;<br>    else cout &lt;&lt; “NO”;<br>}</p>
+<p>Hard 难度：<br>1.AtCoder-abc342_c Many Replacement<br>做题思路：<br>先把每一个字母最后会变成什么记录下来，最后循环把字符串每个字母对应的最后的字母打印出来<br>AC代码：<br>#include <iostream><br>#include <map><br>#include <utility><br>#include <vector><br>using namespace std;</p>
+<p>int main()<br>{<br>    int n;<br>    cin &gt;&gt; n;<br>    string s;<br>    cin &gt;&gt; s;<br>    int q;<br>    cin &gt;&gt; q;<br>    vector<char>c;<br>    vector<char>d;</p>
+<pre><code>for (int i =0; i &lt;q; i++)
+&#123;
+    char c1, d1;
+    cin &gt;&gt; c1 &gt;&gt; d1;
+    c.push_back(c1);
+    d.push_back(d1);
+&#125;
+map&lt;char, char&gt;alpha;
+for (char i = &#39;a&#39;; i &lt;= &#39;z&#39;; i++)
+&#123;
+    
+    alpha[i] = i;
+    for (int j = 0; j &lt; q; j++)
+    &#123;
+        if (alpha[i] == c[j])alpha[i] = d[j];
+    &#125;
+&#125;
+for (int i=0;i&lt;n;i++)
+&#123;
+    cout &lt;&lt; alpha[s[i]];
+&#125;
+</code></pre>
+<p>}</p>
+<p>2.洛谷-B3977 更好的交换<br>解题思路：<br>不直接交换，记下每行交换的顺序（矩阵内每个数字对应的行列仍不变），打印出交换后对应行列的数字<br>AC代码：<br>#include <iostream><br>#include <map><br>#include <utility><br>#include <vector><br>using namespace std;</p>
+<p>int main()<br>{<br>    int n, m;<br>    cin &gt;&gt; n &gt;&gt; m;<br>    vector&lt;vector<int>&gt; a(n,vector<int>(n));</p>
+<pre><code>for (int i = 0; i &lt; n; i++)
+&#123;
+    for (int j = 0; j &lt; n; j++)
+    &#123;
+        cin &gt;&gt; a[i][j];
+    &#125;
+&#125;
+vector&lt;int&gt; x(n),y(n);
+for (int i = 0; i &lt; n; i++)
+&#123;
+    x[i] = i;
+    y[i] = i;
+&#125;
+for (int i = 0; i &lt; m; i++)
+&#123;
+    int choice, z1, z2;
+    cin &gt;&gt; choice &gt;&gt; z1 &gt;&gt; z2;
+    z1--;
+    z2--;
+    if (choice)
+    &#123;
+        int t = x[z1];
+        x[z1] = x[z2];
+        x[z2] = t;
+    &#125;
+    else
+    &#123;
+        int t = y[z1];
+        y[z1] = y[z2];
+        y[z2] = t;
+    &#125;
+&#125;
+for (int i = 0; i &lt;n; i++)
+&#123;
+    for (int j = 0; j &lt;n; j++)
+    &#123;
+        cout &lt;&lt; a[x[i]][y[j]]&lt;&lt;&#39; &#39;;
+    &#125;
+    printf(&quot;\n&quot;);
+&#125;
+</code></pre>
+<p>}</p>
+<p>本专题总结：<br>对于某些题目不一定要把过程按照题目要求的操作，可以考虑最后的状态<br>要善于运用stl库，对于某些功能可以先查找stl库是否有（如交换，排序等）</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/01/23/%E4%B8%93%E9%A2%98%E4%B8%80/" data-id="cm69i22xn0001zo9q78a3aske" data-title="专题一" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/01/23/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2025-01-23T11:35:56.821Z" itemprop="datePublished">2025-01-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2025/01/23/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/01/23/hello-world/" data-id="cm69i22xk0000zo9q5puf1z8m" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/01/">January 2025</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/01/23/%E4%B8%93%E9%A2%98%E4%B8%80/">专题一</a>
+          </li>
+        
+          <li>
+            <a href="/2025/01/23/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
